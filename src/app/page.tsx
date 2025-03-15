@@ -18,6 +18,28 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-950 text-white px-8 py-20">
+
+      {/* Profile Section */}
+      <div className="max-w-4xl mx-auto flex flex-col items-center text-center mb-10">
+        <img
+          src="" 
+          className="w-24 h-24 rounded-full mb-4 border-2 border-gray-700"
+        />
+        <h1 className="text-3xl font-bold">Cat Pereira</h1>
+        <p className="text-gray-400 text-lg mt-2">
+          Software Developer
+        </p>
+        {/* Social Links */}
+        <div className="flex gap-4 mt-3">
+          <a href="https://github.com/catherinepereira" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/catpereira" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
       <h1 className="text-4xl font-bold text-center mb-6">My Projects</h1>
 
       {/* Skill Filter */}
