@@ -19,7 +19,7 @@ export default function Home() {
       {/* Profile Section */}
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center mb-10">
         <img
-          src="../profile.png"
+          src="/portfolio/profile.png"
           className="w-24 h-24 rounded-full mb-4 border-2 border-gray-700"
         />
         <h1 className="text-3xl font-bold">Cat Pereira</h1>
