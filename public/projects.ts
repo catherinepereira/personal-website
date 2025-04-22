@@ -3,11 +3,10 @@ export type Project = {
 	dates?: string;
 	company?: Company;
 
-	description: string;
+	description: string[];
 	link?: string;
 
 	skillTags: SkillTag[];
-	platformTags: PlatformTag[];
 
 	images?: string;
 };
@@ -19,64 +18,79 @@ export enum Company {
 export enum SkillTag {
 	TypeScript = "TypeScript",
 	JavaScript = "JavaScript",
+	Lua = "Lua",
+	HTMLCSS = "HTML/CSS",
+	Python = "Python",
+	Swift = "Swift/SwiftUI",
+
 	React = "React",
 	Roact = "Roact",
-	Swift = "Swift/SwiftUI",
-	Lua = "Lua",
-	Python = "Python",
-}
+	NextJS = "Next.js",
 
-export enum PlatformTag {
-	Website = "Website",
-	App = "App",
-	Roblox = "Roblox",
-	Unity = "Unity",
-	ChromeExtension = "Chrome Extension",
+	RobloxEngine = "Roblox Engine",
+	UnityEngine = "Unity Engine",
 }
 
 export const projects: Project[] = [
 	{
-		title: "Piggy Bank",
-		description:
-			"A test project app written in Swift/SwiftUI that allows you to set budget goals, create transaction entries, and visualize progress toward those goals.",
-		link: "",
-		skillTags: [SkillTag.Swift],
-		platformTags: [PlatformTag.App],
-	},
-	{
-		title: "WebsiteBlocker",
-		description:
-			"A site blocker I made after being unable to find an existing extension that would allow me to block an unlimited number of websites and toggle blocking on and off at will.",
-		link: "",
-		skillTags: [SkillTag.JavaScript],
-		platformTags: [PlatformTag.ChromeExtension],
+		title: "Portfolio Website",
+		description: [
+			"My personal website for sharing my personal and work projects. You're here!",
+		],
+		link: "https://catherinepereira.com", // Replace with link to open source repo
+		skillTags: [
+			SkillTag.React,
+			SkillTag.JavaScript,
+			SkillTag.HTMLCSS,
+			SkillTag.NextJS,
+		],
 	},
 	{
 		title: "Roblox BedWars",
 		dates: "(2022 - Present)",
+		link: "https://bedwars.com",
 		company: Company.EasyGames,
-		description:
-			"Led development of the following playable in-game characters: Whim, Crypt, Elektra, Noelle, Marina, Arachne, and Void Knight. \n" +
-			"This process begins with creating and presenting a kit concept. The concept can be solely mechanic-based, but I usually also include a few art references for the design. " +
-			"The design is then finalized by our concept artist and modeled by one of our team’s modelers. I will then request other image, sound, and model assets from the team and work with each artist or sound designer to finalize these aspects. " +
-			"At the same time, I code the mechanics for the kit, and test the kit with other developers on the team to gather feedback and polish the kit’s unique gameplay. \n\n" +
-			"Other features I helped develop include: \n" +
-			"- “BedWars Creative” in-game Lua scripting API and tools \n" +
-			"- Team Upgrade system iterations \n" +
-			"- Various items, mechanics, gamemodes, and events",
-		skillTags: [SkillTag.TypeScript, SkillTag.Roact, SkillTag.Lua],
-		platformTags: [PlatformTag.Roblox],
+		description: [
+			"Led development of the following playable in-game characters: Whim, Crypt, Elektra, Noelle, Marina, Arachne, Void Knight, and Nahla.",
+			"Some of the other features I've worked on:",
+			"- “BedWars Creative” in-game Lua scripting API and tools",
+			"- Tournament system (team creation, assignment, and scheduling of events)",
+			"- Team Upgrade system iterations",
+		],
+		skillTags: [
+			SkillTag.TypeScript,
+			SkillTag.Roact,
+			SkillTag.Lua,
+			SkillTag.RobloxEngine,
+		],
 	},
 	{
 		title: "Roblox Islands",
 		dates: "(2022)",
+		link: "https://www.roblox.com/games/4872321990/",
 		company: Company.EasyGames,
-		description:
-			"Led development of the following in-game features: \n" +
-			"- Slime Queen boss character and boss fight \n" +
-			"- Fishing mini-game rework \n" +
+		description: [
+			"Led development of the following in-game features:",
+			"- Slime Queen boss character and boss fight",
+			"- Fishing mini-game rework",
 			" - Various new items, tools, crops, and events",
-		skillTags: [SkillTag.TypeScript, SkillTag.Roact],
-		platformTags: [PlatformTag.Roblox],
+		],
+		skillTags: [SkillTag.TypeScript, SkillTag.Roact, SkillTag.RobloxEngine],
+	},
+	{
+		title: "WebsiteBlocker",
+		description: [
+			"A site blocker I made after being unable to find an existing extension that would allow me to block an unlimited number of websites and toggle blocking on and off at will.",
+		],
+		link: "",
+		skillTags: [SkillTag.JavaScript, SkillTag.HTMLCSS],
+	},
+	{
+		title: "Piggy Bank",
+		description: [
+			"An app written in Swift/SwiftUI that allows you to set budget goals, create transaction entries, and visualize progress toward those goals.",
+		],
+		link: "",
+		skillTags: [SkillTag.Swift],
 	},
 ];
