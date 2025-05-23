@@ -51,7 +51,7 @@ export const projects: Project[] = [
 		link: "https://bedwars.com",
 		company: Company.EasyGames,
 		description: [
-			"Led development of the following playable in-game characters: Whim, Crypt, Elektra, Noelle, Marina, Arachne, Void Knight, and Nahla.",
+			"Led development of the following playable in-game characters: Whim, Crypt, Elektra, Noelle, Marina, Arachne, Void Knight, Nahla, Isabel, Ragnar, and Marcel.",
 			"Some of the other features I've worked on:",
 			"- “BedWars Creative” in-game Lua scripting API and tools",
 			"- Tournament system (team creation, assignment, and scheduling of events)",
