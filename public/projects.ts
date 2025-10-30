@@ -39,29 +39,6 @@ export enum SkillTag {
 
 export const projects: Project[] = [
   {
-    title: "Portfolio Website",
-    description: [
-      "My personal website for sharing my personal and work projects. You're here!",
-    ],
-    link: "https://github.com/catherinepereira/personal-website",
-    skillTags: [SkillTag.React, SkillTag.TypeScript, SkillTag.NextJS],
-  },
-  {
-    title: "Airship Tracker",
-    description: [
-      "Website to track live player count statistics from the Unity multiplayer game platform Airship.",
-    ],
-    link: "https://airship.top",
-    skillTags: [
-      SkillTag.React,
-      SkillTag.TypeScript,
-      SkillTag.NestJS,
-      SkillTag.Docker,
-      SkillTag.Prisma,
-      SkillTag.SQLDatabase,
-    ],
-  },
-  {
     title: "Airship",
     dates: "(2025 - Present)",
     link: "https://airship.gg",
@@ -77,6 +54,21 @@ export const projects: Project[] = [
       SkillTag.Prisma,
       SkillTag.SQLDatabase,
       SkillTag.GoogleCloud,
+    ],
+  },
+  {
+    title: "Airship Tracker",
+    description: [
+      "Website to track live player count statistics from the Unity multiplayer game platform Airship.",
+    ],
+    link: "https://airship.top",
+    skillTags: [
+      SkillTag.React,
+      SkillTag.TypeScript,
+      SkillTag.NestJS,
+      SkillTag.Docker,
+      SkillTag.Prisma,
+      SkillTag.SQLDatabase,
     ],
   },
   {
@@ -112,6 +104,14 @@ export const projects: Project[] = [
       " - Various new items, tools, crops, and events",
     ],
     skillTags: [SkillTag.TypeScript, SkillTag.Roact, SkillTag.RobloxEngine],
+  },
+  {
+    title: "Portfolio Website",
+    description: [
+      "My personal website for sharing my personal and work projects. You're here!",
+    ],
+    link: "https://github.com/catherinepereira/personal-website",
+    skillTags: [SkillTag.React, SkillTag.TypeScript, SkillTag.NextJS],
   },
   {
     title: "WebsiteBlocker",
