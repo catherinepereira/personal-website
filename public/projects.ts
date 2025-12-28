@@ -19,6 +19,7 @@ export enum SkillTag {
   TypeScript = "TypeScript",
   JavaScript = "JavaScript",
   Lua = "Lua",
+  Python = "Python",
 
   Svelte = "Svelte",
   React = "React",
@@ -57,6 +58,23 @@ export const projects: Project[] = [
       SkillTag.SQLDatabase,
       SkillTag.GoogleCloud,
     ],
+  },
+  {
+    title: "F1Guessr",
+    description: [
+      "Web game inspired by GeoGuessr for F1 fans to guess the race from a photo of the race.",
+    ],
+    link: "https://f1guessr.com",
+    skillTags: [SkillTag.React, SkillTag.TypeScript],
+  },
+  {
+    title: "f1_frames",
+    description: [
+      "Tool to easily grab screencaps from clips of F1 races, created while I was working on F1Guessr.",
+      "Wraps yt-dlp and ffmpeg with a config file for easy batch processing of videos.",
+    ],
+    link: "https://github.com/catherinepereira/f1_frames",
+    skillTags: [SkillTag.Python],
   },
   {
     title: "airship.top",
