@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     title: "F1Guessr",
     description: [
-      "Web game inspired by GeoGuessr for F1 fans to guess the race from a photo of the race.",
+      "Web game inspired by GeoGuessr for F1 fans to guess the year and grand prix from a photo of the race.",
     ],
     link: "https://f1guessr.com",
     skillTags: [SkillTag.React, SkillTag.TypeScript],
