@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Cat Pereira - Portfolio",
-  description: "Software Engineer specializing in full-stack development and game platforms",
+  description:
+    "Software Engineer specializing in full-stack development and game platforms",
 };
 
 export default function RootLayout({
@@ -30,6 +32,7 @@ export default function RootLayout({
       >
         <Navigation />
         {children}
+        <Analytics />
       </body>
     </html>
   );
