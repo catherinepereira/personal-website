@@ -44,10 +44,10 @@ export const projects: Project[] = [
     company: Company.EasyGames,
     description: [
       "Contributing to platform development through various features, such as:",
-      "▸ Firebase account linking and third-party Steam account linking",
-      "▸ Playtime tracking and top game playtime reward systems",
-      "▸ Website-based view and edit feature of in-game leaderboards",
-      "▸ Moderation tooling",
+      "▸ Firebase account linking, including third-party Steam account linking",
+      "▸ Developer Fund with auditing",
+      "▸ Platform moderation tools",
+      "▸ Developer moderation permission system and moderation tools",
     ],
     skillTags: [
       SkillTag.Svelte,
@@ -58,6 +58,22 @@ export const projects: Project[] = [
       SkillTag.SQLDatabase,
       SkillTag.GoogleCloud,
     ],
+  },
+   {
+    title: "F1 Pit Wall",
+    description: [
+      "Website hosting transcriptions of all driver radio communications from the 2025 Formula 1 season.",
+    ],
+    link: "https://f1pitwall.vercel.app",
+    skillTags: [SkillTag.React, SkillTag.TypeScript],
+  },
+   {
+    title: "dinscribe",
+    description: [
+      "Project streamlining multiple steps of applying audio pre-processing libraries to clean noisy audio and detect speech. Designed to optimize speed and accuracy of OpenAI's Whisper transcription library.",
+    ],
+    link: "https://github.com/catherinepereira/dinscribe",
+    skillTags: [SkillTag.Python],
   },
   {
     title: "F1Guessr",
